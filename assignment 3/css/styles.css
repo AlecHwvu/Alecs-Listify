@@ -1,0 +1,181 @@
+/* border-box so padding does not break widths */
+*{
+    box-sizing: border-box;
+}
+
+
+/* body */
+body{
+    margin:0;
+    font-family: Arial;
+    background-color:#eeeeee;
+}
+
+
+/* header */
+header{
+    background-color:#ff0000;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    color:white;
+}
+
+
+/* NAVBAR */
+
+.topnav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color:#333;
+    overflow:hidden;
+}
+
+.topnav li{
+    float:left;
+}
+
+.topnav li a{
+    display:block;
+    color:white;
+    padding:14px 20px;
+    text-decoration:none;
+}
+
+.topnav li a:hover{
+    background-color:#111;
+}
+
+.active{
+    background-color:#2c4c52;
+}
+
+
+/* LEFT-COLUMN */
+
+.leftcol{
+    float:left;
+    width:25%;
+    background-color:lightgray;
+    padding:15px;
+}
+
+
+/* CATEGORY-LABEL */
+
+.leftcol h2{
+    background:black;
+    color:white;
+    padding:10px;
+}
+
+
+/* SIDE-NAV */
+
+.sidenav{
+    list-style-type:none;
+    padding:0;
+}
+
+.sidenav li a{
+    display:block;
+    padding:8px;
+    text-decoration:none;
+    color:black;
+}
+
+.sidenav li a:hover{
+    background-color:#ccc;
+}
+
+
+
+/* RIGHT-COLUMN */
+
+.rightcol{
+    float:left;
+    width:75%;
+    background-color:white;
+    padding:15px;
+}
+
+
+
+/* GALLERY BOX */
+
+.gallery{ /* reference for overflow hidden: w3schools.com/css/css_overflow.asp kept messing the borders up*/
+    float:left;
+    width:250px;
+    height:400px;
+    border:1px solid gray;
+    border-radius:10px;
+    margin:10px;
+    text-align:center;
+    overflow:hidden; 
+}
+
+
+/* HOVER BORDER */
+
+.gallery:hover{
+    border-color:red;
+}
+
+
+/* IMAGE */
+
+.gallery img{
+    height:250px;
+    width:auto;
+}
+
+
+/* TITLE SPACING */
+
+.gallery h3{    /*w3schools.com/css/css_text.asp <--credit reference for text styling */
+    margin:10px;
+}
+
+
+/* DESCRIPTION SPACING */
+
+.gallery p{
+    margin:10px;
+}
+
+
+
+/* CLEARFIX */
+
+.clearfix{
+    clear:both;  /* w3schools.com/css/css_float_clear.asp */
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color:gray;
+    color:darkgray;
+    text-align:left;
+    padding:20px;
+}
+
+/* Back Button */
+
+.backbtn{
+    display:inline-block;
+    background-color:#e74c3c;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none; /* had to get reference due to styling conflicts w3schools.com/text_decoration.asp */
+    margin:40px;
+}
+
+.backbtn:hover{
+    background-color:#c0392b;
+}
