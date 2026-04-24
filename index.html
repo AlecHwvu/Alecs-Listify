@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- meta tags -->
+  <title>Alec's Listify</title> <!-- title -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- stylesheet with CSS styles -->
+</head> 
+<body>
+
+  <main class="wrapper">
+
+    <header class="header">  
+      <h1>Alec's Listify</h1> <!-- header with title -->
+      <p>by Alec Howard</p> <!-- header with author name -->
+    </header>
+
+    <section class="input-box"> <!-- section for user input -->
+      <label for="textInput">Enter a Sentence</label> <!-- simple label -->
+      <input type="text" id="textInput" placeholder="Please Enter a sentence here with numbers and words"> <!-- text input field -->
+      <button id="processBtn">Process</button> <!-- button to trigger processing -->
+    </section>
+
+    <section class="output">
+      <div class="card"> <!-- card for numbers -->
+        <h2>Numbers</h2>
+        <ul id="numberList"></ul>
+      </div>
+
+      <div class="card"> <!-- card for words -->
+        <h2>Words</h2>
+        <ul id="wordList"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script> <!-- implement of js file -->
+</body>
+</html>

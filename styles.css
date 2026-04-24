@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box; /* makes padding and borders part of the element's total width/height */
+}
+
+body { /* BACKGROUND + FONT reference of w3schools*/
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+/* Made it centered in the middle */
+.container {
+  width: 65%;
+  max-width: 1000px;
+  margin: 80px auto; /* big spacing */
+  padding: 30px;
+
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px); /* messed with background blur */
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* added shadow for cooler effect */
+}
+
+/* header section */
+.header {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 25px;
+}
+
+.header h1 { /* title */
+  margin: 0;
+}
+
+.header p { /* description */
+  margin: 5px 0 0;
+  opacity: 0.8;
+}
+
+/* User Input*/
+.input-section {
+  text-align: center;
+  margin-bottom: 30px; /* spacing between input and results */
+}
+
+.input-group { /* input + button */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+input { /* input field */
+  width: 60%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #00c6ff;
+  color: black;
+  font-weight: bold;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer; /* hand cursor on hover */
+  transition: 0.3s; /* hover effect reference w3schools/transitionMethods*/
+}
+
+button:hover {
+  background: #00a3cc;
+}
+
+/* Results*/
+.results {
+  display: flex;
+  gap: 20px;
+}
+
+/* Cards for Results */
+.box {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.box:hover { /* hover effect for cards */
+  transform: translateY(-5px); /* slight lift on hover /played around with it */
+}
+
+.box h2 {
+  text-align: center;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li { /* list items container */
+  padding: 8px;
+  margin: 6px 0;
+  background: rgba(255,255,255,0.15);
+  border-radius: 6px;
+  text-align: center;
+}
